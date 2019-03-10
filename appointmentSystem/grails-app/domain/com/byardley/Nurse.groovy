@@ -5,7 +5,12 @@ String nurseName
 String qualifications
 String nurseEmail
 String nurseOffice 
-String nursePhone 
+String nursePhone
+static hasMany=[surgerys:Surgery]
+static belongsTo=[Surgery]
+String toString(){
+return nurseName
+}
     static constraints = {
     }
 }

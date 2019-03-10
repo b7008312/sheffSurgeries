@@ -5,7 +5,12 @@ String recepName
 String recepEmail
 String recepUsername
 String recepPassword 
-String recepPhone 
+String recepPhone
+static hasMany=[surgerys:Surgery]
+static belongsTo=[Surgery]
+String toString(){
+return recepName
+}
     static constraints = {
     }
 }
