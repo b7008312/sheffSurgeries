@@ -56,7 +56,8 @@ def App1 = new Appointment(
 appDate: new Date('2019/04/11'),
 appTime: '3pm',
 appDuration: '60',
-roomNumber: 'A-1111'
+roomNumber: 'A-1111',
+patient: TomR
 ).save()
 
 def Prescrip1 = new Prescription(
@@ -69,6 +70,17 @@ patientPaying : 'Yes'
 ).save()
 
 
+
+
+SarahM.addToAppointments(App1)
+
+CityCentre.addToReceptionists(RobK)
+
+TomR.addToPrescriptions(Prescrip1)
+
+SarahM.addToPrescriptions(Prescrip1)
+
+CityCentre.addToNurses(SusanP)
 
 
 
