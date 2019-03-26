@@ -5,24 +5,26 @@ class BootStrap {
     def init = { servletContext ->
     
 
-def CityCentre = new Surgery(
+/*def CityCentre = new Surgery(
 name: 'City Health Centre',
 address: '21 Marble Street, Sheffield',
 postcode: 'S115TY',
 telephone: '0114555555',
 numberOfPatients: '50',
 description: 'Described',
-openingTime: '9:00'
+openingTime: '9.00',
+closingTime: '17.00'
 ).save()
 
-def 11HillStreet = new Surgery(
+def HillStreet = new Surgery(
 name: 'Nice place Hill Street',
 address: '11 Hill Street, Sheffield',
 postcode: 'S14RA',
 telephone: '0115455555',
 numberOfPatients: '50',
 description: 'Described',
-openingTime: '9:00'
+openingTime: '9.00',
+closingTime: '17.00'
 ).save()
 
 def SarahM = new Doctor(
@@ -101,16 +103,16 @@ nursePhone: '01143124443'
 
 def App1 = new Appointment(
 appDate: new Date('2019/04/11'),
-appTime: '3pm',
-appDuration: '60',
+appTime: 15.00,
+appDuration: 60,
 roomNumber: 'A-1111',
 patient: TomR
 ).save()
 
 def App2 = new Appointment(
 appDate: new Date('2019/02/11'),
-appTime: '3pm',
-appDuration: '60',
+appTime: 15.00,
+appDuration: 60,
 roomNumber: 'A-11',
 patient: MichaelH
 ).save()
@@ -120,8 +122,9 @@ pharmacyName: 'City Centre Pharmacy',
 prescripNumber: '56788',
 medicine: 'Paracetamol',
 totalCost: '£5.90',
-dateIssued: new Date('2019/05/25'),
-patientPaying : 'Yes'
+dateIssued: new Date('25/05/2019'),
+patientPaying : 'Yes',
+daysSupply: '5'
 ).save()
 
 def Prescrip2 = new Prescription(
@@ -129,8 +132,9 @@ pharmacyName: 'City Centre Pharmacy',
 prescripNumber: '567890',
 medicine: 'Paracetamol',
 totalCost: '£5.90',
-dateIssued: new Date('2019/05/25'),
-patientPaying : 'Yes'
+dateIssued: new Date('25/05/2019'),
+patientPaying : 'Yes',
+daysSupply: '5'
 ).save()
 
 
@@ -149,15 +153,14 @@ CityCentre.addToNurses(SusanP)
 CityCentre.addToAppointments(App1)
 
 
+CityCentre.addToDoctors(SarahM)
 
 
 
 
 
 
-
-
-
+*/
 
 
 }

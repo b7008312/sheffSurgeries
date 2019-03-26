@@ -9,7 +9,7 @@ String patientID
 Date dateRegistered
 String patientPhone
 static hasMany=[prescriptions:Prescription, doctors:Doctor, surgerys:Surgery]
-static belongsTo=[Surgery, Doctor]
+static belongsTo=[Surgery]
 String toString(){
 return patientName
 }

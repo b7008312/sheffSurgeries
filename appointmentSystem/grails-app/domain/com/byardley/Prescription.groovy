@@ -7,6 +7,9 @@ String medicine
 String totalCost 
 Date dateIssued
 String patientPaying
+int daysSupply
+static hasMany=[patients:Patient, doctors:Doctor]
+static belongsTo=[Patient, Doctor]
 String toString(){
 return prescripNumber
 }
@@ -21,6 +24,7 @@ medicine nullable:false
 totalCost blank:false
 totalCost nullable:false
 dateIssued blank:false
+dateIssued nullable:false
 dateIssued nullable:false
 patientPaying blank:false
 patientPaying nullable:false

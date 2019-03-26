@@ -9,8 +9,8 @@ String password
 String doctorOffice
 String doctorPhone
 String bio
-static hasMany=[surgerys:Surgery, prescriptions:Prescription, appointments:Appointment, nurses:Nurse, patients:Patient]
-static belongsTo=[Surgery, Patient]
+static hasMany=[prescriptions:Prescription, appointments:Appointment, nurses:Nurse, patients:Patient, surgerys:Surgery]
+static belongsTo=[Patient, Surgery]
 String toString(){
 return fullName
 }
