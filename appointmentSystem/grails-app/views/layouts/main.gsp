@@ -18,6 +18,7 @@
 
 <div class="row">
 	<asset:image src="surgery1.jpg"/>
+<g:loginToggle />
 </div>
 <g:layoutBody/>
 	
