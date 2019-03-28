@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Welcome to Sheffield Surgeries</title>
 </head>
 <body>
 <content tag="nav">
@@ -42,16 +42,19 @@
         </ul>
     </li>
 </content>
-
 <div class="svg" role="presentation">
     <div class="grails-logo-container">
         <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
     </div>
 </div>
 
+
+
+
+
 <div id="content" role="main">
     <section class="row colset-2-its">
-        <h1>Welcome to Grails</h1>
+        <h1>Sheffield Surgeries</h1>
 
         <p>
             Congratulations, you have successfully started your first Grails application! At the moment
@@ -70,8 +73,11 @@
                 </g:each>
             </ul>
         </div>
+
     </section>
 </div>
-
+<div class="row">
+	<asset:image src="nhs1.jpg"/>
+</div>
 </body>
 </html>

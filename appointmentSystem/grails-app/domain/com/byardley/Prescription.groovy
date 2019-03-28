@@ -9,7 +9,6 @@ Date dateIssued
 String patientPaying
 int daysSupply
 static hasMany=[patients:Patient, doctors:Doctor]
-static belongsTo=[Patient, Doctor]
 String toString(){
 return prescripNumber
 }
