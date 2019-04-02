@@ -8,7 +8,7 @@ def login(){
 }
 
 	def validate(){
-	def user = Receptionist.findByUsername(params.recepUsername)
+	def user = Receptionist.findByRecepUsername(params.recepUsername)
 		if(user && user.recepPassword == params.recepPassword){
 			session.user = user
 			render view:'home'
