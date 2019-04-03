@@ -8,16 +8,8 @@
 
 
 
-
 	<div id="content" role="main">
 		<div class="row">
-			<div class="first">
-				<h3>Surgery Management</h3>
-				<p>Test</p>
-				<button type="button" class="btn btn-success">
-				<g:link controller="Surgery" action="create">Add Surgery</g:link>
-				</button>
-			</div>
 			<div class="second">
 				<h3>Patient Management</h3>
 				<p>Test</p>
@@ -47,17 +39,24 @@
 				</button>
 			</div>
 			<div class="second">
-				<h3>Appointment Management</h3>
+				<h3>Nurse List</h3>
 				<p>Test</p>
 				<button type="button" class="btn btn-success">
-				<g:link controller="Appointment" action="create">Add Appointment</g:link>
+				<g:link controller="Nurse" action="index">List Nurse</g:link>
 				</button>
 			</div>
 			<div class="first">
-				<h3>Prescription Management</h3>
+				<h3>Patient List</h3>
 				<p>Test</p>
 				<button type="button" class="btn btn-success">
-				<g:link controller="Prescription" action="create">Add Prescription</g:link>
+				<g:link controller="Patient" action="index">List Patient</g:link>
+				</button>
+			</div>
+			<div class="second">
+				<h3>Search</h3>
+				<p>Test</p>
+				<button type="button" class="btn btn-success">
+				<g:link controller="Receptionist" action="Search">Search</g:link>
 				</button>
 			</div>
 </div>
