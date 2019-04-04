@@ -39,6 +39,13 @@
 				<g:link controller="Patient" action="index">List Patient</g:link>
 				</button>
 			</div>
+			<div class="second">
+				<h3>Search</h3>
+				<p>Test</p>
+				<button type="button" class="btn btn-success">
+				<g:link controller="Prescription" action="Search">Search</g:link>
+				</button>
+			</div>
 </div>
 </div>
 </body>

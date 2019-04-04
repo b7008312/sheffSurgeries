@@ -56,7 +56,7 @@
 				<h3>Search</h3>
 				<p>Test</p>
 				<button type="button" class="btn btn-success">
-				<g:link controller="Receptionist" action="Search">Search</g:link>
+				<g:link controller="Patient" action="Search">Search</g:link>
 				</button>
 			</div>
 </div>

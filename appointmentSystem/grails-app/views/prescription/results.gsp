@@ -9,14 +9,20 @@
 <h1>Sheffield Surgeries Search</h1>
 <h3>Search Results</h3>
 <p>
- Searched ${totalPatients} records
+</br>
+ Searched ${totalPrescriptions} records
  for items matching <em>${term}</em>.
- Found <strong>${patients.size()}</strong> patients.
+ Found <strong>${prescriptions.size()}</strong> prescriptions.
+</br>
  </p>
-<ul>
- <g:each var="patient" in="${patients}">
- <li><g:link controller="patient" action="show"
-id="${patient.id}">${patient.patientName}</g:link></li>
+ <ul>
+ <g:each var="prescription" in="${prescriptions}">
+</br>
+</br>
+</br>
+ <li><g:link controller="Prescription" action="show"
+id="${prescription.id}">${prescription.medicine}</g:link></li>
+</br>
  </g:each>
  </ul>
 <button type="button" class="btn btn-success">

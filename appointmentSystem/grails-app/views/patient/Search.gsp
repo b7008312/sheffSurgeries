@@ -10,8 +10,8 @@
 <formset>
 <legend>Search for Patients(Simple)</legend>
 <g:form action="results">
-<label for="name">Patient Name</label>
-<g:textField name="name"/>
+<label for="patientName">Patient Name</label>
+<g:textField name="patientName"/>
 <g:submitButton name="search" value="Search" />
 </g:form>
 </formset>
