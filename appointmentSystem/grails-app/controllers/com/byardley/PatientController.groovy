@@ -5,12 +5,18 @@ class PatientController {
     def scaffold = Patient
 def Search(){
 }
-def results(String patientName){
-def patients=Patient.where{
-patientName=~patientName
-}.list()
-return [patients:patients,
-term:params.patientName,
-totalPatients: Patient.count()]
+
+def results(){
+def patientProps = Patient.metaClass.properties*.name
+def patients = Patient.withCriteria {
+ "${params.queryType}" {
+params.each { field, value ->
+ if (patientProps.grep(field) && value) {
+ ilike(field, value)
+ }
+ }
+ }
+ }
+return [ patients : patients ]
 }
 }
