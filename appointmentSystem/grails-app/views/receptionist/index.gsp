@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="layout" content="main" />
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+}
+
+</style>
+        <meta name="layout" content="mainRecep" />
         <g:set var="entityName" value="${message(code: 'receptionist.label', default: 'Receptionist')}" />
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>

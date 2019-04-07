@@ -34,8 +34,7 @@ p {
 
 <div class="row">
 	<asset:image src="surgery1.jpg"/>
-<g:loginToggle />
-<g:loginToggleDoc />
+
 </div>
 <g:layoutBody/>
 	

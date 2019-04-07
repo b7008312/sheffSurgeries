@@ -20,7 +20,7 @@ out << "Login Receptionist</a></span>"
 }
 out << "</div><br/>"
 }
-def loginToggle1 = {
+def loginToggleDoc = {
 out << "<div style='margin: 15px 0 40px;'>"
 if (request.getSession(false) && session.user){
 out << "<span style='float:left; margin-left: 15px'>"
@@ -37,4 +37,25 @@ out << "Login Doctor</a></span>"
 }
 out << "</div><br/>"
 }
+
+
+def showdetails = {
+out << "<div style='margin: 15px 0 40px;'>"
+if (request.getSession(false) && session.user){
+out << "<span style='float:left; margin-left: 15px'>"
+out << "Welcome ${session.user}."
+out << "</span><span style='float:right;margin-right:15px'>"
+out << "<a href='${createLink(controller:'patient', action:'index')}'>"
+out << "Show Patients </a></span>"
 }
+
+else{
+out << "<span style='float:right;margin-right:10px'>"
+out << "<a href='${createLink(controller:'patient', action:'index')}'>"
+out << "Show Patients</a></span>"
+}
+out << "</div><br/>"
+}
+
+}
+

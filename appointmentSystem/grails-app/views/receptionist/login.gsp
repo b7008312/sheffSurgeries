@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <meta name="layout" content="main"/>
+    <meta name="layout" content="mainRecepLogin"/>
     <title>Sheffield Surgeries Login</title>
 </head>
 <body>

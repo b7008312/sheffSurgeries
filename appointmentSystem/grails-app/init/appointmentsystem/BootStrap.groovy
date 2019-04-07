@@ -5,7 +5,7 @@ class BootStrap {
     def init = { servletContext ->
     
 
-/*def CityCentre = new Surgery(
+def CityCentre = new Surgery(
 name: 'City Health Centre',
 address: '21 Marble Street, Sheffield',
 postcode: 'S115TY',
@@ -140,6 +140,8 @@ daysSupply: '5'
 
 
 
+
+
 SarahM.addToAppointments(App1)
 
 CityCentre.addToReceptionists(RobK)
@@ -160,7 +162,7 @@ CityCentre.addToDoctors(SarahM)
 
 
 
-*/
+
 
 
 }
